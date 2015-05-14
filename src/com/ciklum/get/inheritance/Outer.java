@@ -1,7 +1,7 @@
-package com.ciklum;
+package com.ciklum.get.inheritance;
 
 class Outer {
-    private String msg = "GeeksforGeeks";
+    private String msg = "private string";
     private void fun() {
         System.out.println("Outer fun()");
     }
@@ -14,7 +14,7 @@ class Outer {
 
     public static void main(String args[])  {
         Outer o = new Outer();
-        Inner  i   = o.new Inner();
+        Inner i = o.new Inner();
 
         i.fun();
 
